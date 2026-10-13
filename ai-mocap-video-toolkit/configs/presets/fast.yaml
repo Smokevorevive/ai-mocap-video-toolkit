@@ -1,0 +1,15 @@
+# Fast preview: mediapipe 2D, short lift window, npz only.
+detector:
+  backend: mediapipe
+  score_threshold: 0.3
+  max_persons: 1
+lift:
+  model: videopose3d
+  window: 27
+  smooth: 0.35
+retarget:
+  rig: humanoid_default
+  scale_mode: auto
+  foot_lock: false
+export:
+  formats: [npz]
