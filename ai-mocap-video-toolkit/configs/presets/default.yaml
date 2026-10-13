@@ -1,0 +1,15 @@
+# Balanced preset: RTMPose 2D + MotionBERT lift, BVH + GLB out.
+detector:
+  backend: rtmpose
+  score_threshold: 0.35
+  max_persons: 1
+lift:
+  model: motionbert
+  window: 81
+  smooth: 0.2
+retarget:
+  rig: humanoid_default
+  scale_mode: hip_height
+  foot_lock: true
+export:
+  formats: [bvh, glb]
