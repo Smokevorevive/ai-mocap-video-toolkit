@@ -1,0 +1,21 @@
+{
+  "name": "humanoid_default",
+  "hip_height": 1.05,
+  "bones": [
+    { "name": "hips",          "parent": null,         "offset": [0, 0, 0],       "joint_idx": 11 },
+    { "name": "spine",         "parent": "hips",       "offset": [0, 0.15, 0],    "joint_idx": 5 },
+    { "name": "chest",         "parent": "spine",      "offset": [0, 0.2, 0],     "joint_idx": 5 },
+    { "name": "neck",          "parent": "chest",      "offset": [0, 0.15, 0],    "joint_idx": 0 },
+    { "name": "head",          "parent": "neck",       "offset": [0, 0.12, 0],    "joint_idx": 0 },
+    { "name": "shoulder_l",    "parent": "chest",      "offset": [0.18, 0.02, 0],"joint_idx": 5 },
+    { "name": "upperarm_l",    "parent": "shoulder_l", "offset": [0.06, 0, 0],    "joint_idx": 7 },
+    { "name": "forearm_l",     "parent": "upperarm_l", "offset": [0.25, 0, 0],    "joint_idx": 9 },
+    { "name": "shoulder_r",    "parent": "chest",      "offset": [-0.18, 0.02, 0],"joint_idx": 6 },
+    { "name": "upperarm_r",    "parent": "shoulder_r", "offset": [-0.06, 0, 0],   "joint_idx": 8 },
+    { "name": "forearm_r",     "parent": "upperarm_r", "offset": [-0.25, 0, 0],   "joint_idx": 10 },
+    { "name": "thigh_l",       "parent": "hips",       "offset": [0.1, -0.05, 0], "joint_idx": 13 },
+    { "name": "shin_l",        "parent": "thigh_l",    "offset": [0, -0.4, 0],    "joint_idx": 15 },
+    { "name": "thigh_r",       "parent": "hips",       "offset": [-0.1, -0.05, 0],"joint_idx": 14 },
+    { "name": "shin_r",        "parent": "thigh_r",    "offset": [0, -0.4, 0],    "joint_idx": 16 }
+  ]
+}
